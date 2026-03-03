@@ -123,3 +123,49 @@ footer {
     background: #111;
     font-size: 14px;
 }
+.slider {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.slides {
+    position: relative;
+}
+
+.slide {
+    display: none;
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+.slide.active {
+    display: block;
+    border: 1px solid #00ffae;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    background: #00ffae;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    transform: scale(1.1);
+}
