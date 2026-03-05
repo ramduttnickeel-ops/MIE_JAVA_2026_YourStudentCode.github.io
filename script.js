@@ -152,3 +152,31 @@ const navLinks = document.querySelector(".nav-links");
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hireBtn = document.querySelector('.hire-btn');
+    const hireModal = document.getElementById('hireModal');
+    const closeModal = hireModal.querySelector('.close');
+
+    hireBtn.addEventListener('click', () => {
+        hireModal.style.display = 'flex';
+    });
+
+    closeModal.addEventListener('click', () => {
+        hireModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === hireModal) {
+            hireModal.style.display = 'none';
+        }
+    });
+
+    const hireForm = document.getElementById('hireForm');
+    hireForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thanks! I will get back to you soon.');
+        hireForm.reset();
+        hireModal.style.display = 'none';
+    });
+});
