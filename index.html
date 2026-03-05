@@ -12,27 +12,116 @@
 <header>
     <nav>
         <h1 class="logo">NR.</h1>
-        <ul>
+
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Work</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact" class="hire-btn">Hire Me</a></li>
         </ul>
+
+        <div class="hamburger">☰</div>
     </nav>
+
+    <div id="progress-bar"></div>
 </header>
 
 <section class="hero">
     <h2>Hello, I'm <span>Nickeel</span></h2>
-    <p>Full-Stack Developer | Java Trainee | Problem Solver</p>
-    <a href="cv.pdf" class="btn" download>Download CV</a>
+    <p><span id="typing"></span></p>
+    <a href="/MyWebsite/dynamic/Nickeel RAmdutt cv.pdf" class="btn" download>Download CV</a>
 </section>
 
 <section id="about" class="section">
     <h2>About Me</h2>
+
     <p>
-        I’m a developer with experience working at Europcar as a junior developer.
-        I’ve worked with Angular, backend systems, and I’m currently advancing my Java skills.
-        I enjoy solving problems and building clean, user-focused applications.
+        I'm a passionate developer focused on building clean, functional, and user-friendly digital experiences. 
+        I started my journey in software development through a Diploma in Systems Development and continued 
+        expanding my skills through a Java development program at MECER. Along the way, I’ve developed a strong 
+        interest in full-stack development and understanding how systems work from the frontend interface all the 
+        way to backend logic.
     </p>
+
+    <p>
+        I also gained real-world development experience working at Europcar as a Junior Developer, where I worked 
+        on e-commerce features and helped maintain parts of a production website. This experience taught me how 
+        development works in a professional environment — from collaborating with teammates to debugging issues 
+        and improving existing systems.
+    </p>
+
+    <p>
+        What makes me valuable as a developer is my problem-solving mindset, my curiosity about how technology 
+        works, and my willingness to continuously learn and improve. I enjoy breaking down complex problems and 
+        building solutions that are both efficient and easy to use. Whether it’s improving a user interface, 
+        writing cleaner code, or learning a new technology, I’m always motivated to grow as a developer.
+    </p>
+
+    <p>
+        I’m currently focused on strengthening my full-stack skills, particularly in Java, JavaScript, and modern 
+        web technologies. My goal is to contribute to meaningful projects, collaborate with talented teams, and 
+        build software that solves real problems for people.
+    </p>
+</section>
+
+<section class="section">
+    <h2>What I Do</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Frontend Development</h3>
+            <p>I build responsive and interactive user interfaces using modern web technologies like HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="card">
+            <h3>Backend Development</h3>
+            <p>I develop backend logic and services using Java and REST APIs to support scalable web applications.</p>
+        </div>
+
+        <div class="card">
+            <h3>Problem Solving</h3>
+            <p>I enjoy debugging complex issues, improving existing systems, and building efficient solutions to real-world problems.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>My Journey</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Diploma in Systems Development</h3>
+            <p>Built the foundation for programming, software development principles, and problem solving.</p>
+        </div>
+
+        <div class="card">
+            <h3>Junior Developer – Europcar</h3>
+            <p>Worked on an e-commerce website, maintaining features, debugging issues, and contributing to production code.</p>
+        </div>
+
+        <div class="card">
+            <h3>Java Development Program</h3>
+            <p>Currently strengthening my backend development skills with Java and modern software development practices.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+  <h2>Tech Stack</h2>
+  <div class="skills">
+    <span>Java</span>
+    <span>Angular</span>
+    <span>JavaScript</span>
+    <span>HTML & CSS</span>
+    <span>Git</span>
+    <span>REST APIs</span>
+  </div>
 </section>
 
 <section id="projects" class="section">
@@ -42,9 +131,10 @@
         <div class="slides">
 
             <div class="slide active">
-                <h3>Vehicle Filter System</h3>
-                <p>Built hybrid filtering logic using Acriss codes and Angular components.</p>
-            </div>
+    <h3>Vehicle Filter System</h3>
+    <p>Angular feature allowing users to filter hybrid vehicles using Acriss codes.</p>
+    <small>Tech: Angular • TypeScript • API Integration</small>
+</div>
 
             <div class="slide">
                 <h3>Reservation Service</h3>
@@ -65,15 +155,42 @@
     </div>
 </section>
 
+<section class="section">
+    <h2>Development Activity</h2>
+
+    <p>I actively improve my development skills by building projects, learning new technologies, and contributing to code.</p>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Repositories</h3>
+            <p>Personal projects and experiments available on GitHub.</p>
+        </div>
+
+        <div class="card">
+            <h3>Continuous Learning</h3>
+            <p>Currently focused on Java development and expanding my full-stack capabilities.</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="section">
+    <h2>Let’s Build Something Great</h2>
+    <p>
+        I'm always open to opportunities where I can grow as a developer, contribute to meaningful projects, 
+        and work with teams that are passionate about technology.
+    </p>
+</section>
+
 <section id="contact" class="section">
     <h2>Let’s Connect</h2>
     <div class="socials">
         <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">Instagram</a>
+        <a href="https://github.com/ramduttnickeel-ops">GitHub</a>
+        <a href="#" id="gmailLink">Gmail</a>
     </div>
 </section>
-
+<div id="toast">Email Copied!</div>
 <footer>
     <p>© 2026 Nickeel Ramdutt</p>
 </footer>
